@@ -14,5 +14,7 @@ public:
 };
 
 class Matakuliah {
+private:
+	
 	
 };
