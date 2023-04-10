@@ -7,7 +7,7 @@ public:
 	string nama;
 	void tampil() {
 		cout << "NIM= " << nim;
-		cout << "/nNama= " << nama; 
+		cout << "\nNama= " << nama; 
 	}
 	
 	
@@ -25,7 +25,7 @@ public:
 		cin >> sks;
 		cout << "\nMasukan kode Mk= ";
 		cin >> kode;
-		cout << "/nMasukan namaMk= ";
+		cout << "\nMasukan namaMk= ";
 		cin >> namaMk;
 	}
 	
@@ -36,3 +36,19 @@ public:
 	}
 	
 };
+
+int main() {
+	Mahasiswa mhs;
+	Matakuliah Mk;
+
+	cout << "\nMasukan NIM = ";
+	cin >> mhs.nim;
+	cout << "\nMasukan nama = ";
+	cin >> mhs.nama;
+
+	Mk.inputMk();
+	mhs.tampil();
+	Mk.tampilMk();
+
+	system("Pause");
+}
